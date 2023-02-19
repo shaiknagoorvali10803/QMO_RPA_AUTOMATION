@@ -1,6 +1,7 @@
 package com.swarpa.utils;
 
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.cucumber.listener.Reporter;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -28,9 +29,9 @@ public class Utility extends DriverFactory {
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         screenshotName = returnDateStamp(".jpg");
         FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName));
-        Reporter.addStepLog("Taking a screenshot!");
-        Reporter.addStepLog("<br>");
-        Reporter.addStepLog("<a target=\"_blank\", href="+ returnScreenshotName() + "><img src="+ returnScreenshotName()+ " height=200 width=300></img></a>");
+        ExtentCucumberAdapter.addTestStepLog("Taking a screenshot!");
+        ExtentCucumberAdapter.addTestStepLog("<br>");
+        ExtentCucumberAdapter.addTestStepLog("<a target=\"_blank\", href="+ returnScreenshotName() + "><img src="+ returnScreenshotName()+ " height=200 width=300></img></a>");
     }
 
     public static String returnScreenshotName() {

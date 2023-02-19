@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "classpath:features",
         glue = "com.swarpa.stepdefinitions",
-        tags = " @visa",
+        tags = "@google",
         plugin = {
                 "pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json",

@@ -1,10 +1,12 @@
 package com.swarpa.stepdefinitions;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.swarpa.pageActions.GooglePage;
 import com.swarpa.utils.DriverFactory;
 import com.swarpa.utils.ScenarioContext;
 import com.swarpa.utils.SeleniumUtils;
+import com.swarpa.utils.Utility;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,14 +25,17 @@ public class GoogleSteps {
     protected WebDriverWait wait;
     private ScenarioContext scenarioContext;
     private SeleniumUtils utils;
+    private Utility utility;
+
     private GooglePage googlePage;
-    public GoogleSteps (GooglePage googlePage, ScenarioContext scenarioContext, SeleniumUtils utils) throws IOException {
+    public GoogleSteps (GooglePage googlePage, ScenarioContext scenarioContext, SeleniumUtils utils,Utility utility) throws IOException {
         this.scenarioContext=scenarioContext;
         this.driver= DriverFactory.getDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         PageFactory.initElements(this.driver, this);
         this.googlePage=googlePage;
         this.utils=utils;
+        this.utility=utility;
      }
    @Given("I am on the google site")
     public void launchSite() {
@@ -55,5 +60,7 @@ public class GoogleSteps {
         utils.singleClick(driver,By.xpath("//a[normalize-space()='Images']"));
         Thread.sleep(3000);
         driver.findElement(By.xpath("//a[normalize-space()='Videos']")).click();
+        utility.captureScreenshot();
+        Thread.sleep(3000);
     }
  }
