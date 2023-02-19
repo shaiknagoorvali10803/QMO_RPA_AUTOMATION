@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RPA Test Suite" parallel="classes" data-provider-thread-count="2">
+  <test name="TestNGRunner" >
+    <classes>
+      <class name="com.swarpa.runner.TestNgRunner"/>
+     </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
