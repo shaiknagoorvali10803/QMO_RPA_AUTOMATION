@@ -1,12 +1,11 @@
 package com.swarpa.stepdefinitions;
 
-import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.swarpa.pageActions.GooglePage;
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.ScenarioContext;
-import com.swarpa.utils.SeleniumUtils;
-import com.swarpa.utils.Utility;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.ScenarioContext;
+import com.swarpa.Utils.SeleniumUtils;
+import com.swarpa.Utils.Utility;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -6,9 +6,9 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.LoggingException;
-import com.swarpa.utils.ScenarioContext;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.LoggingException;
+import com.swarpa.Utils.ScenarioContext;
 
 import java.io.IOException;
 

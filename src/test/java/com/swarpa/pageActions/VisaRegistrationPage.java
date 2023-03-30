@@ -1,7 +1,7 @@
 package com.swarpa.pageActions;
 
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.SeleniumUtils;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.SeleniumUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

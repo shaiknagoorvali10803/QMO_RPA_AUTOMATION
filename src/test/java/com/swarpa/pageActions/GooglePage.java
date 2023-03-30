@@ -1,7 +1,7 @@
 package com.swarpa.pageActions;
 
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.ScenarioContext;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.ScenarioContext;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

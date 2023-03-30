@@ -1,6 +1,6 @@
 package com.swarpa.stepdefinitions;
 
-import com.swarpa.utils.DriverFactory;
+import com.swarpa.Utils.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 

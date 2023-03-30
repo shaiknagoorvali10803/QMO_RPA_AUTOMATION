@@ -3,9 +3,9 @@ package com.swarpa.stepdefinitions;
 
 import com.swarpa.pageActions.GooglePage;
 import com.swarpa.pageActions.VisaRegistrationPage;
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.ScenarioContext;
-import com.swarpa.utils.SeleniumUtils;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.ScenarioContext;
+import com.swarpa.Utils.SeleniumUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

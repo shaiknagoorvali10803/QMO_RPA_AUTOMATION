@@ -1,4 +1,4 @@
-package com.swarpa.utils;
+package com.swarpa.Utils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -11,23 +11,20 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-import static com.swarpa.utils.CommonConstants.BEFORE_WAIT_FOR_ELEMENT_IN_BUTTON_CLICK;
-import static com.swarpa.utils.CommonConstants.MM_DD_YYYY_WITH_SLASH;
+import static com.swarpa.Utils.CommonConstants.BEFORE_WAIT_FOR_ELEMENT_IN_BUTTON_CLICK;
+import static com.swarpa.Utils.CommonConstants.MM_DD_YYYY_WITH_SLASH;
 import static org.testng.AssertJUnit.fail;
 
 public class SeleniumUtils {

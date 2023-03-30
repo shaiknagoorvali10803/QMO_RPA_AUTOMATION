@@ -1,4 +1,4 @@
-package com.swarpa.utils;
+package com.swarpa.Utils;
 
 
 public class CommonConstants {

@@ -1,10 +1,12 @@
-package com.swarpa.utils;
+package com.swarpa.Utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import java.io.IOException;
@@ -35,6 +37,13 @@ public class DriverFactory {
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 driver = new FirefoxDriver(firefoxOptions);
+                break;
+            }
+            case "edge" : {
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions firefoxOptions = new EdgeOptions();
+                firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+                driver = new EdgeDriver(firefoxOptions);
                 break;
             }
         }

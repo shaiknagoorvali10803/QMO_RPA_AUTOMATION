@@ -4,7 +4,7 @@ import com.swarpa.pageObjects.LoginPageLocators;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.swarpa.utils.DriverFactory;
+import com.swarpa.Utils.DriverFactory;
 
 import java.io.IOException;
 import java.time.Duration;

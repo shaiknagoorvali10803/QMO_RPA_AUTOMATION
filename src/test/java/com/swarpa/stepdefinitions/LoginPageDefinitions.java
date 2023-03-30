@@ -9,9 +9,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import com.swarpa.utils.DriverFactory;
-import com.swarpa.utils.ScenarioContext;
-import com.swarpa.utils.Utility;
+import com.swarpa.Utils.DriverFactory;
+import com.swarpa.Utils.ScenarioContext;
+import com.swarpa.Utils.Utility;
 
 import java.io.IOException;
 
